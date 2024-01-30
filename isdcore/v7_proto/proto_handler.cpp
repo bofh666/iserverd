@@ -195,7 +195,8 @@ void process_authorize_packet(Packet &pack)
       close_connection(pack); 
       return; 
    }
-   
+
+/*
    if (strlen(cli_profile) == 0) 
    { 
       DEBUG(10, ("AIM: No cli profile. Closing connection (%s at %s)\n", 
@@ -203,6 +204,7 @@ void process_authorize_packet(Packet &pack)
       close_connection(pack); 
       return; 
    }
+*/
 
    if (strlen(password) == 0)    
    { 
